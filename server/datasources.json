@@ -1,0 +1,16 @@
+{
+  "db": {
+    "name": "db",
+    "connector": "memory"
+  },
+  "mongodb": {
+    "host": "",
+    "port": 27017,
+    "url": "mongodb://cochitoUser:Password123@cluster0-shard-00-00-lxnbj.mongodb.net:27017,cluster0-shard-00-01-lxnbj.mongodb.net:27017,cluster0-shard-00-02-lxnbj.mongodb.net:27017/cochito?ssl=true&replicaSet=Cluster0-shard-0&authSource=admin&retryWrites=true",
+    "database": "cochito",
+    "password": "Password123",
+    "name": "mongodb",
+    "user": "cochitoUser",
+    "connector": "mongodb"
+  }
+}

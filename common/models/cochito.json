@@ -1,0 +1,44 @@
+{
+  "name": "Cochito",
+  "plural": "Cochitos",
+  "base": "User",
+  "idInjection": true,
+  "options": {
+    "validateUpsert": true
+  },
+  "properties": {
+    "email": {
+      "type": "string",
+      "required": true
+    },
+    "password": {
+      "type": "string",
+      "required": true
+    },
+    "realm": false,
+    "username": false,
+    "emailVerified": false,
+    "verificationToken": false
+  },
+  "validations": [],
+  "relations": {
+    "tags": {
+      "type": "hasMany",
+      "model": "Tag",
+      "foreignKey": "cochitoId",
+      "options": {
+        "nestRemoting": true
+      }
+    },
+    "expenses": {
+      "type": "hasMany",
+      "model": "Expense",
+      "foreignKey": "cochitoId",
+      "options": {
+        "nestRemoting": true
+      }
+    }
+  },
+  "acls": [],
+  "methods": {}
+}
